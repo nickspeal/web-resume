@@ -1,0 +1,99 @@
+{
+  "experience": [
+    {
+      "title": "Personal Development Time",
+      "date": "2018",
+      "itemsDefault": [
+        "I've been fortunate enough to have the opportunity to circumnavigate the world, take classes online, and focus on my physical health. I've grown and learned a lot in the process."
+      ],
+      "itemsExpanded": [
+        "I've been fortunate enough to have the opportunity to circumnavigate the world, take classes online, and focus on my physical health. I've grown and learned a lot in the process.",
+        "Computer Science study: Structure and Interpretation of Computer Programs (MIT), Intro to Algorithms (Udacity)",
+        "Projects: <a href='http://discoverlive.speal.ca'>Discover Live</a> is a web application that curates a Spotify playlist based on upcoming concerts, using Django, React, Redis, AWS",
+        "Travel abroad: Hong Kong, India, Canada"
+      ],
+      "itemsPrint": [
+        "I've been fortunate enough to have the opportunity to circumnavigate the world, take computer science classes online, and focus on my physical health. I've grown and learned a lot in the process.",
+        "Notable project: Discover Live is a web application that curates a Spotify playlist based on upcoming concerts, using Django, React, Redis, AWS"
+      ]
+    },
+    {
+      "title": "Software Engineer, 3D Robotics",
+      "date": "2017",
+      "itemsDefault": [
+        "Built a complex and evolving web application, enabling visualization & interaction with construction site topography collected by drone",
+        "Shipped an MVP early; achieved market leadership after one year of biweekly updates, measuring user feedback along the way with Amplitude and interviews",
+        "Owned frontend development and maintenance together with 2-3 other engineers, occasionally picking up backend and drone software projects as needed.",
+        "Fun challenges included: PDF import and overlay on a map, real-time 3D Volume estimator and visualizer, Integration with nascent Autodesk APIs for team sync & file management.",
+        "Worked remotely, allowing uninterrupted time for intense focus, while communicating effectively online."
+      ],
+      "itemsExpanded": [
+        "Built a complex and evolving web application, enabling visualization & interaction with construction site topography collected by drone",
+        "Shipped an MVP early; achieved market leadership after one year of biweekly updates, measuring user feedback along the way with Amplitude and interviews",
+        "Owned frontend development and maintenance together with 2-3 other engineers, occasionally picking up backend and drone software projects as needed.",
+        "Fun challenges included: PDF import and overlay on a map, real-time 3D Volume estimator and visualizer, Integration with nascent Autodesk APIs for team sync & file management.",
+        "Worked remotely, allowing uninterrupted time for intense focus, while communicating effectively online."
+      ],
+      "itemsPrint": [
+        "Built a complex and evolving web application, enabling visualization & interaction with construction site topography collected by drone",
+        "Shipped an MVP early; achieved market leadership after one year of biweekly updates, measuring user feedback along the way with Amplitude and interviews",
+        "Owned frontend development and maintenance together with 2-3 other engineers, occasionally picking up backend and drone software projects as needed.",
+        "Fun challenges included: PDF import and overlay on a map, real-time 3D Volume estimator and visualizer, Integration with nascent Autodesk APIs for team sync & file management.",
+        "Worked remotely, allowing uninterrupted time for intense focus, while communicating effectively online."
+      ]
+    },
+    {
+      "title": "Engineering Project Manager, 3D Robotics",
+      "date": "2015-2016",
+      "itemsDefault": [
+        "Responsible for systems integration and team coordination for Solo: the first mass-produced camera drone to be sold in major retail stores around the world"
+      ],
+      "itemsExpanded": [
+        "Responsible for systems integration and team coordination for Solo: the first mass-produced camera drone to be sold in major retail stores around the world",
+        "Led many ~3-month projects to release major software updates to the drone and accompanying mobile applications",
+        "Ensured product quality by establishing integration testing processes and investigating complex issues with interdisciplinary teams",
+        "Led by example to positively influence team dynamics and morale through the uncertainty of a radically changing product vision"
+      ],
+      "itemsPrint": [
+        "Responsible for systems integration and team coordination for Solo: the first mass-produced camera drone to be sold in major retail stores around the world",
+        "Led many ~3-month projects to release major software updates to the drone and accompanying mobile applications",
+        "Ensured product quality by establishing integration testing processes and investigating complex issues with interdisciplinary teams",
+        "Led by example to positively influence team dynamics and morale through the uncertainty of a radically changing product vision"
+      ]
+    },
+    {
+      "title": "Team Lead and Controls Engineer, McGill Robotics",
+      "date": "2011-2014",
+      "itemsDefault": [
+        "Coordinated 98 students across Mechanical, Software, Electrical, and Business divisions"
+      ],
+      "itemsExpanded": [
+        "Coordinated 98 students across Mechanical, Software, Electrical, and Business divisions",
+        "Planned yearly design cycles and owned systems integration of an autonomous underwater vehicle and a lunar excavator",
+        "Developed the control system software in C++ with ROS",
+        "International competition results: 1st in branding, 3rd in design & presentation, 10th overall out of 39 teams at RoboSub 2014. 12th out of 50 at NASA in 2013"
+      ],
+      "itemsPrint": [
+        "Coordinated 98 students across Mechanical, Software, Electrical, and Business divisions"
+      ]
+    },
+    {
+      "title": "Summer Internships, McGill University",
+      "date": "2011-2013",
+      "itemsDefault": [
+        "Software development in Python and MATLAB in support of a variety of research objectives"
+      ],
+      "itemsExpanded": [
+        "Software development in Python and MATLAB in support of a variety of research objectives",
+        "2011: Developed a Graphical User Interface in Python for turbomachinery simulations",
+        "2012: Developed a physics simulator in MATLAB to study granular dynamics",
+        "2013: Designed and conducted experiments on a quadrotor aircraft and LiDAR to facilitate autonomous takeoff and landing; published results at ICUAS 2014"
+      ],
+      "itemsPrint": [
+        "Developed a Graphical User Interface in Python for turbomachinery simulations",
+        "Developed a physics simulator in MATLAB to study granular dynamics",
+        "Designed and conducted experiments on a quadrotor aircraft and LiDAR to facilitate autonomous takeoff and landing; published results at ICUAS 2014"
+      ]
+    }
+  ]
+}
