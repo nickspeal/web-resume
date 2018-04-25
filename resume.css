@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  background: grey;
+  font-family: Garamond;
+}
+
+.page {
+  background: white;
+  width: 8.5in;
+  min-height: 11in;
+  margin: auto;
+  box-shadow: 15px 10px 18px #000;
+}
+
+.inner-page {
+  margin: 0.5in;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+h1 {
+  margin: 0; /* Override default */
+}
+
+.icon-container {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.school-description {
+  white-space: nowrap;
+}
+
+.skills {
+
+}
+
+.infotable {
+  flex: 1;
+}
+
+.summary {
+  padding: 1rem;
+}
+
+.job-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.year {
+  /* TODO figure out pull righttext-align: right; */
+}
+
+.section-icons {
+  margin-top: 1rem;
+}
+.section-experience {
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.clickable {
+  cursor: grab;
+}
