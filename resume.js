@@ -1,7 +1,8 @@
 function fetchData() {
   var req = new XMLHttpRequest();
-  req.open("GET", "resume.json", true);
-  req.onreadystatechange = loadContent;
+  req.open("GET", "resume.json");
+  req.overrideMimeType("application/json");
+  req.addEventListener('load', loadContent);
   req.send();
 }
 
@@ -48,43 +49,41 @@ function toggle_visibility(idx) {
   flip_caret(carets, expandedState[idx]);
 }
 
-function loadContent(r) {
-  if (r.originalTarget.readyState === 4){
-    var experienceData = JSON.parse(r.originalTarget.response);
+function loadContent() {
+  var experienceData = JSON.parse(this.responseText);
 
-    var div = document.getElementById("section-experience");
+  var div = document.getElementById("section-experience");
 
-    experienceData.experience.forEach((job, idx) => {
-      var listItems = '';
-      listItems = job.itemsDefault.reduce(
-        (accumulatingList, nextString) => accumulatingList + `<li class="li-${idx}-default noprint">${nextString}</li>`,
-        listItems,
-      );
+  experienceData.experience.forEach((job, idx) => {
+    var listItems = '';
+    listItems = job.itemsDefault.reduce(
+      (accumulatingList, nextString) => accumulatingList + `<li class="li-${idx}-default noprint">${nextString}</li>`,
+      listItems,
+    );
 
-      listItems = job.itemsExpanded.reduce(
-        (accumulatingList, nextString) => accumulatingList + `<li class="li-${idx}-expanded noprint hidden">${nextString}</li>`,
-        listItems,
-      )
+    listItems = job.itemsExpanded.reduce(
+      (accumulatingList, nextString) => accumulatingList + `<li class="li-${idx}-expanded noprint hidden">${nextString}</li>`,
+      listItems,
+    )
 
-      listItems = job.itemsPrint.reduce(
-        (accumulatingList, nextString) => accumulatingList + `<li class="li-print hidden">${nextString}</li>`,
-        listItems,
-      )
+    listItems = job.itemsPrint.reduce(
+      (accumulatingList, nextString) => accumulatingList + `<li class="li-print hidden">${nextString}</li>`,
+      listItems,
+    )
 
-      var newHTML = `
-        <div class="job-title">
-          <span class="bold clickable" onClick="toggle_visibility(${idx});">
-            <i class="fas fa-caret-down caret-${idx}"></i>
-            ${job.title}</span>
-          <span>${job.date}</span>
-        </div>
-        <ul class="job-list">
-          ${listItems}
-        </ul>
-      `
-      div.innerHTML += newHTML;
-    })
-  }
+    var newHTML = `
+      <div class="job-title">
+        <span class="bold clickable" onClick="toggle_visibility(${idx});">
+          <i class="fas fa-caret-down caret-${idx}"></i>
+          ${job.title}</span>
+        <span>${job.date}</span>
+      </div>
+      <ul class="job-list">
+        ${listItems}
+      </ul>
+    `
+    div.innerHTML += newHTML;
+  })
 }
 
 function printPDF() {
