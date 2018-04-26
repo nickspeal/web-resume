@@ -5,24 +5,24 @@ body {
 }
 
 .print-button {
-  height: 80px;
-  min-width: 300px;
+  position: absolute;
+  padding: 1rem;
   background-color: Transparent;
   border-radius: 8px;
-  font-size: 18pt;
+  font-size: 16pt;
   cursor: grab;
   margin: 1rem;
 
   border: 2px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
-  transition-property: border, color;
+  transition-property: border, color, background-color;
   transition-duration: 0.5s;
 }
 
 .print-button:hover {
   color: rgba(255, 255, 255, 1);
   border: 2px solid rgba(255, 255, 255, 1);
-
+  background-color: grey;
 }
 
 .page {
