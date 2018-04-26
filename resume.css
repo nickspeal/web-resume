@@ -4,6 +4,22 @@ body {
   font-family: Garamond;
 }
 
+h1 {
+  margin: 0; /* Override default */
+}
+
+.hidden {
+  display: none;
+}
+
+.clickable {
+  cursor: grab;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .print-button {
   position: absolute;
   padding: 1rem;
@@ -37,31 +53,20 @@ body {
   margin: 0.5in;
 }
 
+@media (max-width: 500px) {
+  .inner-page {
+    margin: 10%;
+  }
+  /* Hide Print button for small screens. Can't print from mobile! */
+  .print-button {
+    display: none;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-}
-
-h1 {
-  margin: 0; /* Override default */
-}
-
-.icon-container {
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.school-description {
-  white-space: nowrap;
-}
-
-.infotable {
-  flex: 1;
-}
-
-.summary {
-  padding: 1rem;
 }
 
 .job-title {
@@ -69,13 +74,35 @@ h1 {
   justify-content: space-between;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .section-icons {
   margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
 }
+
+@media (max-width: 750px) {
+    .section-icons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .subsection-icons {
+      margin: 1rem 0; /* Not a big fan of this special case... */
+    }
+}
+
+.subsection-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  margin: 0 1rem;
+}
+
+.school-description {
+  white-space: nowrap;
+}
+
 .section-experience {
   margin-top: 0.5rem;
 }
@@ -83,14 +110,6 @@ h1 {
 ul {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-}
-
-.hidden {
-  display: none;
-}
-
-.clickable {
-  cursor: grab;
 }
 
 @media print {
