@@ -1,3 +1,12 @@
+function fetchData() {
+  var req = new XMLHttpRequest();
+  req.open("GET", "resume.json", true);
+  req.onreadystatechange = loadContent;
+  req.send();
+}
+
+window.onload = fetchData;
+
 var expandedState = []
 function init_visibility() {
   // Init to an array with expanded=false for each item.
@@ -28,15 +37,15 @@ function flip_caret(items, flipped) {
   })
 }
 
-function toggle_visibility(id) {
-  expandedState[id] = !expandedState[id];
-  var defaultContent = document.getElementsByClassName(`li-${id}-default`);
-  var expandedContent = document.getElementsByClassName(`li-${id}-expanded`);
-  var carets = document.getElementsByClassName(`caret-${id}`);
+function toggle_visibility(idx) {
+  expandedState[idx] = !expandedState[idx];
+  var defaultContent = document.getElementsByClassName(`li-${idx}-default`);
+  var expandedContent = document.getElementsByClassName(`li-${idx}-expanded`);
+  var carets = document.getElementsByClassName(`caret-${idx}`);
 
-  set_visibility(defaultContent, !expandedState[id]);
-  set_visibility(expandedContent, expandedState[id]);
-  flip_caret(carets, expandedState[id]);
+  set_visibility(defaultContent, !expandedState[idx]);
+  set_visibility(expandedContent, expandedState[idx]);
+  flip_caret(carets, expandedState[idx]);
 }
 
 function loadContent(r) {
@@ -48,17 +57,17 @@ function loadContent(r) {
     experienceData.experience.forEach((job, idx) => {
       var listItems = '';
       listItems = job.itemsDefault.reduce(
-        (accumulatingList, nextString) => accumulatingList + `<li class=li-${idx}-default>${nextString}</li>`,
+        (accumulatingList, nextString) => accumulatingList + `<li class="li-${idx}-default noprint">${nextString}</li>`,
         listItems,
       );
 
       listItems = job.itemsExpanded.reduce(
-        (accumulatingList, nextString) => accumulatingList + `<li class=li-${idx}-expanded hidden>${nextString}</li>`,
+        (accumulatingList, nextString) => accumulatingList + `<li class="li-${idx}-expanded noprint hidden">${nextString}</li>`,
         listItems,
       )
 
       listItems = job.itemsPrint.reduce(
-        (accumulatingList, nextString) => accumulatingList + `<li class=li-${idx}-print hidden>${nextString}</li>`,
+        (accumulatingList, nextString) => accumulatingList + `<li class="li-print hidden">${nextString}</li>`,
         listItems,
       )
 
@@ -78,11 +87,6 @@ function loadContent(r) {
   }
 }
 
-function fetchData() {
-  var req = new XMLHttpRequest();
-  req.open("GET", "resume.json", true);
-  req.onreadystatechange = loadContent;
-  req.send();
+function printPDF() {
+  window.print();
 }
-
-window.onload = fetchData;

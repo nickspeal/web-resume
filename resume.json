@@ -13,8 +13,7 @@
         "Travel abroad: Hong Kong, India, Canada"
       ],
       "itemsPrint": [
-        "I've been fortunate enough to have the opportunity to circumnavigate the world, take computer science classes online, and focus on my physical health. I've grown and learned a lot in the process.",
-        "Notable project: Discover Live is a web application that curates a Spotify playlist based on upcoming concerts, using Django, React, Redis, AWS"
+        "Traveling, taking computer science classes online, and building fun projects, like a web application that curates a Spotify playlist based on upcoming concerts, using Django, React, Redis, AWS"
       ]
     },
     {
@@ -56,9 +55,7 @@
       ],
       "itemsPrint": [
         "Responsible for systems integration and team coordination for Solo: the first mass-produced camera drone to be sold in major retail stores around the world",
-        "Led many ~3-month projects to release major software updates to the drone and accompanying mobile applications",
-        "Ensured product quality by establishing integration testing processes and investigating complex issues with interdisciplinary teams",
-        "Led by example to positively influence team dynamics and morale through the uncertainty of a radically changing product vision"
+        "Ensured product quality by establishing integration testing processes and investigating complex issues with interdisciplinary teams"
       ]
     },
     {
@@ -74,7 +71,7 @@
         "International competition results: 1st in branding, 3rd in design & presentation, 10th overall out of 39 teams at RoboSub 2014. 12th out of 50 at NASA in 2013"
       ],
       "itemsPrint": [
-        "Coordinated 98 students across Mechanical, Software, Electrical, and Business divisions"
+        "Planned yearly design cycles and owned systems integration of an autonomous underwater vehicle and a lunar excavator"
       ]
     },
     {
@@ -90,9 +87,7 @@
         "2013: Designed and conducted experiments on a quadrotor aircraft and LiDAR to facilitate autonomous takeoff and landing; published results at ICUAS 2014"
       ],
       "itemsPrint": [
-        "Developed a Graphical User Interface in Python for turbomachinery simulations",
-        "Developed a physics simulator in MATLAB to study granular dynamics",
-        "Designed and conducted experiments on a quadrotor aircraft and LiDAR to facilitate autonomous takeoff and landing; published results at ICUAS 2014"
+        "Software development in Python and MATLAB in support of a variety of research objectives"
       ]
     }
   ]

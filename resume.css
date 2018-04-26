@@ -4,6 +4,27 @@ body {
   font-family: Garamond;
 }
 
+.print-button {
+  height: 80px;
+  min-width: 300px;
+  background-color: Transparent;
+  border-radius: 8px;
+  font-size: 18pt;
+  cursor: grab;
+  margin: 1rem;
+
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  transition-property: border, color;
+  transition-duration: 0.5s;
+}
+
+.print-button:hover {
+  color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+
+}
+
 .page {
   background: white;
   width: 8.5in;
@@ -35,10 +56,6 @@ h1 {
   white-space: nowrap;
 }
 
-.skills {
-
-}
-
 .infotable {
   flex: 1;
 }
@@ -56,15 +73,16 @@ h1 {
   font-weight: bold;
 }
 
-.year {
-  /* TODO figure out pull righttext-align: right; */
-}
-
 .section-icons {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .section-experience {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+ul {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .hidden {
@@ -73,4 +91,37 @@ h1 {
 
 .clickable {
   cursor: grab;
+}
+
+@media print {
+  .print-button {
+    display: none;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .inner-page {
+    margin: 0;
+  }
+
+  .fa-caret-down {
+    display: none !important;
+  }
+
+  .noprint {
+    display: none !important;
+  }
+
+  .li-print {
+    display: list-item;
+  }
+
+  /* body {
+    font-size: 10pt;
+  } */
 }
