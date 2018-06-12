@@ -8,6 +8,7 @@
     {
       "title": "Self-directed Post-Graduate Education",
       "date": "2018",
+      "dateAlt": "December 2017 to Present",
       "itemsDefault": [
         "A master's degree is an excuse to spend a year or so learning. I've assembled my own curriculum of computer science and social justice and skipped the big bill."
       ],
@@ -20,6 +21,7 @@
     {
       "title": "Software Engineer, 3D Robotics",
       "date": "2017",
+      "dateAlt": "October 2016 through November 2017",
       "itemsDefault": [
         "Built a complex and evolving web application, enabling visualization & interaction with construction site topography collected by drone",
         "Owned frontend development and maintenance together with 2-3 other engineers, occasionally picking up backend and drone software projects as needed.",
@@ -43,6 +45,7 @@
     {
       "title": "Engineering Project Manager, 3D Robotics",
       "date": "2015-2016",
+      "dateAlt": "January 2015 through October 2016",
       "itemsDefault": [
         "Responsible for systems integration and team coordination for <a href='https://3dr.com/solo-drone' target='_blank'>Solo</a>: the first mass-produced camera drone to be sold in major retail stores around the world"
       ],
@@ -60,6 +63,7 @@
     {
       "title": "Team Lead and Controls Engineer, McGill Robotics",
       "date": "2011-2014",
+      "dateAlt": "September 2011 through August 2014",
       "itemsDefault": [
         "Led a team of 98 students to build robots for two international competitions",
         "Built the control system for an autonomous underwater vehicle in c++"
@@ -77,6 +81,7 @@
     {
       "title": "Summer Internships, McGill University",
       "date": "2011-2013",
+      "dateAlt": "May through August for three summers",
       "itemsDefault": [
         "Software development in Python and MATLAB in support of a variety of research objectives"
       ],
