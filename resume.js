@@ -96,7 +96,8 @@ function populateExperience(experience) {
       <div class="job-title">
         <span class="bold clickable" onClick="toggle_visibility(${idx});">
           <i class="fas fa-caret-down caret-${idx}"></i>
-          ${job.title}</span>
+          ${job.title}
+        </span>
         <span title="${job.dateAlt || ''}">${job.date || ''}</span>
       </div>
       <ul class="job-list">
