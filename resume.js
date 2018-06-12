@@ -1,5 +1,5 @@
 const DEFAULT_DATA_FILENAME = 'data/resume-.json';
-const CLIPPY_DELAY = 1000;
+const CLIPPY_DELAY = 15000;
 var expandedState = []
 
 window.onhashchange = refreshData;
