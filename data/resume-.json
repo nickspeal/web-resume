@@ -1,19 +1,20 @@
 {
+  "summary": "I'm a software engineer with a specialization in web development and a track record of success in robotics and team leadership. I'm committed to improving the access and quality of education for all children and excited to build tools that help teachers help students learn more effectively.",
+  "skills": [
+    "Javascript, React, Redux, Sass, CSS Modules",
+    "Python, Django, AWS, Linux"
+  ],
   "experience": [
     {
-      "title": "Personal Development Time",
+      "title": "Self-directed Post-Graduate Education",
       "date": "2018",
       "itemsDefault": [
-        "I've been fortunate enough to have the opportunity to circumnavigate the world, take classes online, and focus on my physical health. I've grown and learned a lot in the process."
+        "A master's degree is an excuse to spend a year or so learning. I've assembled my own curriculum of computer science and social justice and skipped the big bill."
       ],
       "itemsExpanded": [
-        "I've been fortunate enough to have the opportunity to circumnavigate the world, take classes online, and focus on my physical health. I've grown and learned a lot in the process.",
-        "Computer Science study: Structure and Interpretation of Computer Programs (MIT), Intro to Algorithms (Udacity)",
-        "Projects: <a href='http://discoverlive.speal.ca'>Discover Live</a> is a web application that curates a Spotify playlist based on upcoming concerts, using Django, React, Redis, AWS",
+        "A master's degree is an excuse to spend a year or so learning. I've assembled my own curriculum of computer science and social justice and skipped the big bill.",
+        "Computer Science study: Structure and Interpretation of Computer Programs (<a href='https://sarabander.github.io/sicp/html/index.xhtml' target='_blank'>MIT</a>), Intro to Algorithms (<a href='https://www.udacity.com/course/intro-to-algorithms--cs215' target='_blank'>Udacity</a>), Machine Learning and Data Mining (<a href='https://ubc-cs.github.io/cpsc340/' target='_blank'>UBC<a/>)",
         "Travel abroad: Hong Kong, India, Canada"
-      ],
-      "itemsPrint": [
-        "Traveling, taking computer science classes online, and building fun projects, like a web application that curates a Spotify playlist based on upcoming concerts, using Django, React, Redis, AWS"
       ]
     },
     {
@@ -21,22 +22,20 @@
       "date": "2017",
       "itemsDefault": [
         "Built a complex and evolving web application, enabling visualization & interaction with construction site topography collected by drone",
-        "Shipped an MVP early; achieved market leadership after one year of biweekly updates, measuring user feedback along the way with Amplitude and interviews",
         "Owned frontend development and maintenance together with 2-3 other engineers, occasionally picking up backend and drone software projects as needed.",
-        "Fun challenges included: PDF import and overlay on a map, real-time 3D Volume estimator and visualizer, Integration with nascent Autodesk APIs for team sync & file management.",
         "Worked remotely, allowing uninterrupted time for intense focus, while communicating effectively online."
       ],
       "itemsExpanded": [
         "Built a complex and evolving web application, enabling visualization & interaction with construction site topography collected by drone",
-        "Shipped an MVP early; achieved market leadership after one year of biweekly updates, measuring user feedback along the way with Amplitude and interviews",
         "Owned frontend development and maintenance together with 2-3 other engineers, occasionally picking up backend and drone software projects as needed.",
+        "Shipped an MVP early; achieved market leadership after one year of biweekly updates, measuring user feedback along the way with Amplitude and interviews",
         "Fun challenges included: PDF import and overlay on a map, real-time 3D Volume estimator and visualizer, Integration with nascent Autodesk APIs for team sync & file management.",
         "Worked remotely, allowing uninterrupted time for intense focus, while communicating effectively online."
       ],
       "itemsPrint": [
         "Built a complex and evolving web application, enabling visualization & interaction with construction site topography collected by drone",
-        "Shipped an MVP early; achieved market leadership after one year of biweekly updates, measuring user feedback along the way with Amplitude and interviews",
         "Owned frontend development and maintenance together with 2-3 other engineers, occasionally picking up backend and drone software projects as needed.",
+        "Shipped an MVP early; achieved market leadership after one year of biweekly updates, measuring user feedback along the way with Amplitude and interviews",
         "Fun challenges included: PDF import and overlay on a map, real-time 3D Volume estimator and visualizer, Integration with nascent Autodesk APIs for team sync & file management.",
         "Worked remotely, allowing uninterrupted time for intense focus, while communicating effectively online."
       ]
@@ -45,11 +44,11 @@
       "title": "Engineering Project Manager, 3D Robotics",
       "date": "2015-2016",
       "itemsDefault": [
-        "Responsible for systems integration and team coordination for Solo: the first mass-produced camera drone to be sold in major retail stores around the world"
+        "Responsible for systems integration and team coordination for <a href='https://3dr.com/solo-drone' target='_blank'>Solo</a>: the first mass-produced camera drone to be sold in major retail stores around the world"
       ],
       "itemsExpanded": [
-        "Responsible for systems integration and team coordination for Solo: the first mass-produced camera drone to be sold in major retail stores around the world",
-        "Led many ~3-month projects to release major software updates to the drone and accompanying mobile applications",
+        "Responsible for systems integration and team coordination for <a href='https://3dr.com/solo-drone' target='_blank'>Solo</a>: the first mass-produced camera drone to be sold in major retail stores around the world",
+        "Led many ~3-month projects to release major software updates to the drone and accompanying mobile apps",
         "Ensured product quality by establishing integration testing processes and investigating complex issues with interdisciplinary teams",
         "Led by example to positively influence team dynamics and morale through the uncertainty of a radically changing product vision"
       ],
@@ -62,16 +61,17 @@
       "title": "Team Lead and Controls Engineer, McGill Robotics",
       "date": "2011-2014",
       "itemsDefault": [
-        "Coordinated 98 students across Mechanical, Software, Electrical, and Business divisions"
+        "Led a team of 98 students to build robots for two international competitions",
+        "Built the control system for an autonomous underwater vehicle in c++"
       ],
       "itemsExpanded": [
-        "Coordinated 98 students across Mechanical, Software, Electrical, and Business divisions",
-        "Planned yearly design cycles and owned systems integration of an autonomous underwater vehicle and a lunar excavator",
-        "Developed the control system software in C++ with ROS",
+        "Led a team of 98 students to build robots for two international competitions",
+        "Built the control system for an autonomous underwater vehicle in c++",
+        "Planned yearly design cycles and owned systems integration",
         "International competition results: 1st in branding, 3rd in design & presentation, 10th overall out of 39 teams at RoboSub 2014. 12th out of 50 at NASA in 2013"
       ],
       "itemsPrint": [
-        "Planned yearly design cycles and owned systems integration of an autonomous underwater vehicle and a lunar excavator"
+        "Led a team of 98 students to build robots for two international competitions"
       ]
     },
     {
@@ -88,6 +88,23 @@
       ],
       "itemsPrint": [
         "Software development in Python and MATLAB in support of a variety of research objectives"
+      ]
+    },
+    {
+      "title": "Side Projects",
+      "itemsDefault": [
+        "Built a variety of (mostly web-) applications to learn and solve problems. Detail at <a href='http://www.speal.ca/Projects/' taret='_blank'>speal.ca/projects</a>"
+      ],
+      "itemsExpanded": [
+        "Built a variety of (mostly web-) applications to learn and solve problems.",
+        "<a href='http://www.speal.ca/net-zero' target='_blank'>Tract:<a> A carbon footprint tracking tool (ReactJS)",
+        "<a href='http://www.speal.ca/virtual-high' target='_blank'>Virtual High:<a> A satirical critique of educational software trends (ReactJS)",
+        "<a href='http://discoverlive.speal.ca' target='_blank'>Discover Live:<a> A concert discovery service (Python/Django/ReactJS)",
+        "<a href='http://www.speal.ca/brailleuniversity/' target='_blank'>Braille University:<a> An accessible app to teach braille (ObjectiveC)",
+        "More detail at <a href='http://www.speal.ca/Projects/' target='_blank'>speal.ca/projects</a>"
+      ],
+      "itemsPrint": [
+        "Find a library of (mostly web-) applications I've built at speal.ca/projects"
       ]
     }
   ]

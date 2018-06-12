@@ -1,0 +1,56 @@
+{
+  "warning": "This is the 30 second version. For more detail, please visit speal.ca/web-resume",
+  "summary": "I'm a software engineer with a specialization in web development and a track record of success in robotics and team leadership. I'm committed to improving the access and quality of education for all children and excited to build tools that help teachers help students learn more effectively.",
+  "skills": [
+    "Javascript, React, Redux, Sass, CSS Modules",
+    "Python, Django, AWS, Linux"
+  ],
+  "experience": [
+    {
+      "title": "Self-directed Post-Graduate Education",
+      "date": "2018",
+      "itemsDefault": [
+        "A master's degree is an excuse to spend a year or so learning. I've assembled my own curriculum of computer science and social justice and skipped the big bill."
+      ]
+    },
+    {
+      "title": "Software Engineer, 3D Robotics",
+      "date": "2017",
+      "itemsDefault": [
+        "Built a complex and evolving web application in React, enabling visualization & interaction with construction site topography collected by drone"
+      ]
+    },
+    {
+      "title": "Engineering Project Manager, 3D Robotics",
+      "date": "2015-2016",
+      "itemsDefault": [
+        "Responsible for systems integration and team coordination for Solo: the first mass-produced camera drone to be sold in major retail stores around the world"
+      ]
+    },
+    {
+      "title": "Team Lead and Controls Engineer, McGill Robotics",
+      "date": "2011-2014",
+      "itemsDefault": [
+        "Led a team of 98 students to build robots for two international competitions",
+        "Built the control system for an autonomous underwater vehicle in c++"
+      ]
+    },
+    {
+      "title": "3 Summer Internships, McGill University",
+      "date": "2011-2013",
+      "itemsDefault": [
+        "Software development in Python and MATLAB in support of a variety of research objectives"
+      ]
+    },
+    {
+      "title": "Notable Side Projects",
+      "itemsDefault": [
+        "A carbon footprint tracking tool (ReactJS)",
+        "A satirical critique of educational software trends (ReactJS)",
+        "A concert discovery service (Python/Django/ReactJS/Websockets/Redis/AWS)",
+        "An app to teach braille (ObjectiveC)",
+        "More detail at speal.ca/projects"
+      ]
+    }
+  ]
+}

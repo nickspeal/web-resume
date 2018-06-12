@@ -1,17 +1,28 @@
-function fetchData() {
-  var req = new XMLHttpRequest();
-  req.open("GET", "resume.json");
+const DEFAULT_DATA_FILENAME = 'data/resume-.json';
+var expandedState = []
+
+window.onhashchange = refreshData;
+window.onload = refreshData;
+
+function fetchData(filename) {
+  const req = new XMLHttpRequest();
+  req.open("GET", filename);
   req.overrideMimeType("application/json");
   req.addEventListener('load', loadContent);
   req.send();
+  return req;
 }
 
-window.onload = fetchData;
+function refreshData() {
+  const hash = window.location.hash.substring(1);
+  const filename = `data/resume-${hash}.json`;
+  const req = fetchData(filename);
+  req.addEventListener('error', () => fetchData(DEFAULT_DATA_FILENAME));
+}
 
-var expandedState = []
 function init_visibility() {
   // Init to an array with expanded=false for each item.
-  expandedState = experienceData.experience.map(_ => false);
+  expandedState = resumeData.experience.map(_ => false);
 }
 
 function set_visibility(items, visibility) {
@@ -49,34 +60,42 @@ function toggle_visibility(idx) {
   flip_caret(carets, expandedState[idx]);
 }
 
-function loadContent() {
-  var experienceData = JSON.parse(this.responseText);
+function populateText(id, text) {
+  document.getElementById(id).innerHTML = text;
+}
 
-  var div = document.getElementById("section-experience");
+function populateSkills(skills) {
+  const div = document.getElementById("section-skills");
+  div.innerHTML = skills.join('<br>');
+}
 
-  experienceData.experience.forEach((job, idx) => {
-    var listItems = '';
+function populateExperience(experience) {
+  const div = document.getElementById("section-experience");
+  div.innerHTML = '';
+
+  experience.forEach((job, idx) => {
+    let listItems = '';
     listItems = job.itemsDefault.reduce(
       (accumulatingList, nextString) => accumulatingList + `<li class="li-${idx}-default noprint">${nextString}</li>`,
       listItems,
     );
 
-    listItems = job.itemsExpanded.reduce(
+    listItems = (job.itemsExpanded || job.itemsDefault).reduce(
       (accumulatingList, nextString) => accumulatingList + `<li class="li-${idx}-expanded noprint hidden">${nextString}</li>`,
       listItems,
     )
 
-    listItems = job.itemsPrint.reduce(
+    listItems = (job.itemsPrint || job.itemsDefault).reduce(
       (accumulatingList, nextString) => accumulatingList + `<li class="li-print hidden">${nextString}</li>`,
       listItems,
     )
 
-    var newHTML = `
+    const newHTML = `
       <div class="job-title">
         <span class="bold clickable" onClick="toggle_visibility(${idx});">
           <i class="fas fa-caret-down caret-${idx}"></i>
           ${job.title}</span>
-        <span>${job.date}</span>
+        <span>${job.date || ''}</span>
       </div>
       <ul class="job-list">
         ${listItems}
@@ -86,6 +105,40 @@ function loadContent() {
   })
 }
 
-function printPDF() {
-  window.print();
+function updatePrintButton() {
+  // Check if PDF exists on the server:
+  const hash = window.location.hash.substring(1);
+  const filename = `export/resume-${hash}.pdf`;
+  const req = new XMLHttpRequest();
+  req.open("HEAD", filename);
+  req.addEventListener('load', e => onPDFCheckSuccess(e, filename));
+  req.addEventListener('error', onPDFCheckError);
+  req.send();
+}
+
+function onPDFCheckSuccess(e, filename) {
+  const a = document.getElementById('pdf-link');
+  if (e.target.status === 200) {
+    a.href = filename;
+    a.removeAttribute('onClick');
+  } else {
+    onPDFCheckError();
+  }
+}
+
+function onPDFCheckError() {
+  const a = document.getElementById('pdf-link');
+  a.removeAttribute('href');
+  a.onClick = window.print;
+}
+
+
+function loadContent(event) {
+  // Previously used this.responseText, but it was more opaque about where it was coming from
+  var resumeData = JSON.parse(event.target.response);
+  populateText('section-warning', resumeData.warning || '');
+  populateText('section-summary', resumeData.summary || '');
+  populateSkills(resumeData.skills);
+  populateExperience(resumeData.experience);
+  updatePrintButton();
 }

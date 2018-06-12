@@ -8,10 +8,10 @@
    <script type="text/javascript" src="resume.js"></script>
  </head>
  <body>
-   <button class="print-button" onClick="printPDF();">
-     <i class="far fa-file-alt"></i>
-     Print to PDF
-   </button>
+   <a id="pdf-link" download="Resume Nick Speal.pdf" class="print-button" onClick="window.print();">
+       <i class="far fa-file-alt"></i>
+       Print to PDF
+   </a>
    <div class="page">
      <div class="inner-page">
        <div class="header">
@@ -22,13 +22,11 @@
               <img src=contact.png title="Contact info is included as an image to avoid being scraped by web-crawlers"/>
            </div>
        </div>
-     <hr />
+       <hr />
 
-
-     <div class="section-summary">
-       I'm a software engineer with a specialization in web development and a track record of success in robotics and team leadership. I'm committed to improving the access and quality of education for all children and excited to build tools that help teachers help students take control of their learning.
+     <div class="section-summary" id="section-summary">
+       <!--Content replaced with resume.json by resume.js-->
      </div>
-
 
      <div class="section-icons">
        <div class="subsection-icons">
@@ -42,9 +40,8 @@
        </div>
        <div class="subsection-icons">
          <i class="fas fa-wrench fa-3x icon" title="Skills"></i>
-        <div>
-          Frontend: Javascript, React, Redux, Webpack, CSS Modules, SASS<br />
-          Backend: Python, Django, AWS, Redis, Linux
+        <div id="section-skills">
+          <!--Content replaced with resume.json by resume.js-->
         </div>
        </div>
      </div>
@@ -52,7 +49,12 @@
 
 
      <div class="section-experience" id="section-experience">
-       <!--Filled In from resume.json by resume.js-->
+       <!--Content replaced with resume.json by resume.js-->
+       <h3>I'm sorry I tried to dynamically load the content here but there seems to have been an error. Please ensure Javascript is enabled and the URL is correct and maybe try another browser. If that doesn't work please accept my apologies and report this bug to my email address above. Thanks!</h3>
+     </div>
+
+     <div class="section-warning" id="section-warning">
+        <!--Content optionally injected with resume.json by resume.js-->
      </div>
 
    </div>
