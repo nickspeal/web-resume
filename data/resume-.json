@@ -105,7 +105,7 @@
         "<a href='http://www.speal.ca/net-zero' target='_blank'>Tract:<a> A carbon footprint tracking tool (ReactJS)",
         "<a href='http://www.speal.ca/virtual-high' target='_blank'>Virtual High:<a> A satirical critique of educational software trends (ReactJS)",
         "<a href='http://discoverlive.speal.ca' target='_blank'>Discover Live:<a> A concert discovery service (Python/Django/ReactJS)",
-        "<a href='http://www.speal.ca/brailleuniversity/' target='_blank'>Braille University:<a> An accessible app to teach braille (ObjectiveC)",
+        "<a href='http://www.speal.ca/projects/brailleuniversity/' target='_blank'>Braille University:<a> An accessible app to teach braille (ObjectiveC)",
         "More detail at <a href='http://www.speal.ca/projects/' target='_blank'>speal.ca/projects</a>"
       ],
       "itemsPrint": [
