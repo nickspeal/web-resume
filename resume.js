@@ -135,10 +135,17 @@ function onPDFCheckError() {
 
 function loadContent(event) {
   // Previously used this.responseText, but it was more opaque about where it was coming from
-  var resumeData = JSON.parse(event.target.response);
-  populateText('section-warning', resumeData.warning || '');
-  populateText('section-summary', resumeData.summary || '');
-  populateSkills(resumeData.skills);
-  populateExperience(resumeData.experience);
-  updatePrintButton();
+  if (event && event.target && event.target.status == 200 && event.target.response) {
+    var resumeData = JSON.parse(event.target.response);
+    populateText('section-warning', resumeData.warning || '');
+    populateText('section-summary', resumeData.summary || '');
+    populateSkills(resumeData.skills);
+    populateExperience(resumeData.experience);
+    updatePrintButton();
+  } else {
+    console.log("Error loading content. Load Event is: ", event);
+    console.log("Falling back to default content");
+    // BEWARE OF INFINITE LOOP!!
+    fetchData(DEFAULT_DATA_FILENAME);
+  }
 }
