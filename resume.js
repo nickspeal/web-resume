@@ -1,5 +1,5 @@
 const DEFAULT_DATA_FILENAME = 'data/resume-.json';
-const CLIPPY_DELAY = 10000;
+const CLIPPY_DELAY = 1000;
 var expandedState = []
 
 window.onhashchange = refreshData;
@@ -163,28 +163,19 @@ function sleep(ms) {
 async function clippyLoadComplete(agent) {
   // Window coordinates for interactions
   // Origin in the top left.
-  const pdfButtonVantage = { x: 10, y: 200 };
   const contentExpandVantage = { x: window.innerWidth < 1100 ? 10 : 0.25 * (window.innerWidth - 800), y: 350 };
-  const contentExpandTarget = { x: contentExpandVantage.x + 100, y: contentExpandVantage.y - 100}
+  const contentExpandTarget = { x: 9999, y: contentExpandVantage.y} // Always point right
 
   agent.show();
-  agent.speak("Did you think this was a PDF? Gotcha!!! If you'd prefer a PDF, just click the button in the top left.");
-  await sleep(7000)
-  agent.moveTo(pdfButtonVantage.x, pdfButtonVantage.y);
-  agent.play('LookUp');
-  await sleep(5000);
-
-
-  agent.speak("But the nice thing about HTML is it's interactive. Click on any of the section headings to read more.")
   agent.moveTo(contentExpandVantage.x, contentExpandVantage.y);
+  agent.speak("Hello there! Did you know that you can click the section headers to see more detail? Give it a try!");
   agent.gestureAt(contentExpandTarget.x, contentExpandTarget.y);
-  agent.play('LookLeft');
-  await sleep(9000);
+  await sleep(8000);
+  agent.play('Lookleft');
   toggle_visibility(1);
-  await sleep(1000);
-
+  await sleep(2000);
   agent.speak("Give Nick a call. He'd be great for the job!");
   agent.play("SendMail");
-  await sleep(4000);
+  await sleep(5000);
   agent.hide();
 }
