@@ -1,6 +1,6 @@
 {
   "warning": "This is the 30 second version. For more detail, please visit speal.ca/web-resume",
-  "summary": "I'm a software engineer with a specialization in web development and a track record of success in robotics and team leadership. I'm committed to improving the access and quality of education for all children and excited to build tools that help teachers help students learn more effectively.",
+  "summary": "I'm a software engineer with a specialization in web development and a track record of success in robotics and team leadership. I'm committed to improving the access and quality of education for all children and excited to build tools that help teachers help students learn more effectively. I'm also a US Citizen.",
   "skills": [
     "Javascript, React, Redux, Sass, CSS Modules",
     "Python, Django, AWS, Linux"
@@ -10,7 +10,7 @@
       "title": "Self-directed Post-Graduate Education",
       "date": "2018",
       "itemsDefault": [
-        "A master's degree is an excuse to spend a year or so learning. I've assembled my own curriculum of computer science and social justice and skipped the big bill."
+        "I've assembled my own curriculum of online courses, books, projects, and travel related to computer science and social justice"
       ]
     },
     {
