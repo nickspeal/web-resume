@@ -1,0 +1,15 @@
+{
+  "name": "web-resume",
+  "version": "1.0.0",
+  "main": "public/bundle.js",
+  "scripts": {
+    "start": "http-server",
+    "build": "browserify scripts/resume.js -o public/bundle.js",
+    "dev": "watchify scripts/resume.js -o public/bundle.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^16.2.2",
+    "watchify": "^3.11.0"
+  }
+}
