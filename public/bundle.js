@@ -192,7 +192,7 @@ function experience(content) {
     markup += newHTML;
   })
 
-  return `<div class-"section-experience">${markup}</div>`;
+  return `<div class="section-experience">${markup}</div>`;
 }
 
 function warning(content) {
