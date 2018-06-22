@@ -33,7 +33,7 @@ function populatePage(markup) {
 
 function populateCoverLetter(content) {
   let markup = '';
-  markup += `<br><br>`;
+  markup += `<br>`;
   markup += content.date ? `<p>${content.date}</p><br>` : `<br><br>`
   markup += `<p>${content.salutation}</p>`
   markup += content.body.reduce((markup, item) => markup + `<p>${item}</p>`);
@@ -99,16 +99,18 @@ function experience(content) {
     )
 
     const newHTML = `
-      <div class="job-title">
-        <span class="bold clickable" onClick="toggle_visibility(${idx})">
-          <i class="fas fa-caret-down caret-${idx}"></i>
-          ${job.title}
-        </span>
-        <span title="${job.dateAlt || ''}">${job.date || ''}</span>
+      <div class="clickable" onClick="toggle_visibility(${idx})">
+        <div class="job-title">
+          <span class="bold">
+            <i class="fas fa-caret-down caret-${idx}"></i>
+            ${job.title}
+          </span>
+          <span title="${job.dateAlt || ''}">${job.date || ''}</span>
+        </div>
+        <ul class="job-list">
+          ${listItems}
+        </ul>
       </div>
-      <ul class="job-list">
-        ${listItems}
-      </ul>
     `
     markup += newHTML;
   })
